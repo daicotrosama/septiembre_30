@@ -17,9 +17,20 @@ def Temperaturas():
     pausa=input("Preione una tecla para continuar")
 
 def Personas():
+    mayor=0
+    menor=0
     print("*** datos de personas***")
+    tope=int(input("Cuantas personas ingresaran?"))
+    for x in range(tope):
+        n=input("Introduzca su nombre: ")
+        edad=int(input("Ingrese su edad: "))
+        if( edad > 18):
+            mayor +=1
 
-    pausa=input("Presione una tecla paracontinuar")
+        if(edad < 18):
+            menor+=1
+            
+    pausa=input("Presione una tecla para continuar")
 
 
 seguir=True
